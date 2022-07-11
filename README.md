@@ -10,6 +10,20 @@
 
 ![Details](fig/details.png)
 
+## Dataset
+
+-Rain200H/Rain200L: [Link](https://www.icst.pku.edu.cn/struct/Projects/joint_rain_removal.html)
+
+-DDN-Data: [Link](https://xueyangfu.github.io/projects/cvpr2017.html)
+
+-DID-Data: [Link](https://github.com/hezhangsprinter/DID-MDN)
+
+-SPA-Data: [Link](https://github.com/stevewongv/SPANet)
+
+-RainDS: [Link](https://github.com/Songforrr/RainDS_CCN)
+
+-AGAN-Data: [Link](https://github.com/rui1996/DeRaindrop)
+
 ## Results
 For research convinience, we release both derained patches as well as full-size images.
 - Derain results [Google Drive](https://drive.google.com/drive/folders/17GkFCALmG50RNrc0p4Cl92rAwlVagtWs?usp=sharing)
@@ -37,7 +51,7 @@ For research convinience, we release both derained patches as well as full-size 
     <td align="center">33.80</td>
     <td align="center">34.85</td>
     <td align="center">47.34</td>
-    <th align="center">31.63</th>
+    <td align="center">31.63</td>
   </tr>
   <tr>
     <td align="left">SSIM</td>
@@ -46,7 +60,7 @@ For research convinience, we release both derained patches as well as full-size 
     <td align="center">0.9407</td>
     <td align="center">0.9401</td>
     <td align="center">0.9929</td>
-    <th align="center">0.9360</th>
+    <td align="center">0.9360</td>
   </tr>
 </table>
 
