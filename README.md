@@ -1,6 +1,11 @@
 # [Image Deraining Transformer](https://ieeexplore.ieee.org/document/9798773) (IDT)
 <hr />
 
+### Update:
+
+* **2022.09.21**: Add test code for full size images: <a href="test_full_size.py">test_full_size.py</a>
+
+
 > **Abstract:** *Existing deep learning based de-raining approaches have resorted to the convolutional architectures. However, the intrinsic limitations of convolution, including local receptive fields and independence of input content, hinder the model's ability to capture long-range and complicated rainy artifacts. To overcome these limitations, we propose an effective and efficient transformer-based architecture for the image de-raining. Firstly, we introduce general priors of vision tasks, i.e., locality and hierarchy, into the network architecture so that our model can achieve excellent de-raining performance without costly pre-training. Secondly, since the geometric appearance of rainy artifacts is complicated and of significant variance in space, it is essential for de-raining models to extract both local and non-local features. Therefore, we design the complementary window-based transformer and spatial transformer to enhance locality while capturing long-range dependencies. Besides, to compensate for the positional blindness of self-attention, we establish a separate representative space for modeling positional relationship, and design a new relative position enhanced multi-head self-attention. In this way, our model enjoys powerful abilities to capture dependencies from both content and position, so as to achieve better image content recovery while removing rainy artifacts. Experiments substantiate that our approach attains more appealing results than state-of-the-art methods quantitatively and qualitatively.* 
 <hr />
 
@@ -12,17 +17,24 @@
 
 ## Dataset
 
--Rain200H/Rain200L: [Link](https://www.icst.pku.edu.cn/struct/Projects/joint_rain_removal.html)
+- Rain200H/Rain200L: [Link](https://www.icst.pku.edu.cn/struct/Projects/joint_rain_removal.html)
 
--DDN-Data: [Link](https://xueyangfu.github.io/projects/cvpr2017.html)
+- DDN-Data: [Link](https://xueyangfu.github.io/projects/cvpr2017.html)
 
--DID-Data: [Link](https://github.com/hezhangsprinter/DID-MDN)
+- DID-Data: [Link](https://github.com/hezhangsprinter/DID-MDN)
 
--SPA-Data: [Link](https://github.com/stevewongv/SPANet)
+- SPA-Data: [Link](https://github.com/stevewongv/SPANet)
 
--RainDS: [Link](https://github.com/Songforrr/RainDS_CCN)
+- RainDS: [Link](https://github.com/Songforrr/RainDS_CCN)
 
--AGAN-Data: [Link](https://github.com/rui1996/DeRaindrop)
+- AGAN-Data: [Link](https://github.com/rui1996/DeRaindrop)
+
+## Demo
+To test the pre-trained IDT model on full size images:
+
+```
+python test_full_size.py --arch IDT --save_path your_save_path --data_path your_input_path --weights pretrained_weights
+```
 
 ## Results
 For research convinience, we release both derained patches as well as full-size images.
