@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c550b0f0-f13c-4147-93f8-f946ce7682a3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_full_size.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/imgdata.py" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/imgdata.py" afterDir="false" />
-    </list>
+    <list default="true" id="c550b0f0-f13c-4147-93f8-f946ce7682a3" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -53,7 +45,7 @@
       <updated>1657510063115</updated>
       <workItem from="1657510064447" duration="3222000" />
       <workItem from="1657781215384" duration="2072000" />
-      <workItem from="1663693384319" duration="2289000" />
+      <workItem from="1663693384319" duration="2567000" />
     </task>
     <servers />
   </component>
