@@ -1,13 +1,13 @@
-# [Image Deraining Transformer](https://ieeexplore.ieee.org/document/9798773) (IDT)
+# [Image Deraining Transformer](https://ieeexplore.ieee.org/document/9798773)
+ <b>Jie Xiao, Xueyang Fu, Aiping Liu, Feng Wu, Zheng-Jun Zha</b>
 <hr />
 
 ### Update:
 
 * **2022.09.21**: Add test code for full size images: <a href="test_full_size.py">test_full_size.py</a>
-
-
-> **Abstract:** *Existing deep learning based de-raining approaches have resorted to the convolutional architectures. However, the intrinsic limitations of convolution, including local receptive fields and independence of input content, hinder the model's ability to capture long-range and complicated rainy artifacts. To overcome these limitations, we propose an effective and efficient transformer-based architecture for the image de-raining. Firstly, we introduce general priors of vision tasks, i.e., locality and hierarchy, into the network architecture so that our model can achieve excellent de-raining performance without costly pre-training. Secondly, since the geometric appearance of rainy artifacts is complicated and of significant variance in space, it is essential for de-raining models to extract both local and non-local features. Therefore, we design the complementary window-based transformer and spatial transformer to enhance locality while capturing long-range dependencies. Besides, to compensate for the positional blindness of self-attention, we establish a separate representative space for modeling positional relationship, and design a new relative position enhanced multi-head self-attention. In this way, our model enjoys powerful abilities to capture dependencies from both content and position, so as to achieve better image content recovery while removing rainy artifacts. Experiments substantiate that our approach attains more appealing results than state-of-the-art methods quantitatively and qualitatively.* 
 <hr />
+
+> **Abstract:** *Existing deep learning based de-raining approaches have resorted to the convolutional architectures. However, the intrinsic limitations of convolution, including local receptive fields and independence of input content, hinder the model's ability to capture long-range and complicated rainy artifacts. To overcome these limitations, we propose an effective and efficient transformer-based architecture for the image de-raining. Firstly, we introduce general priors of vision tasks, i.e., locality and hierarchy, into the network architecture so that our model can achieve excellent de-raining performance without costly pre-training. Secondly, since the geometric appearance of rainy artifacts is complicated and of significant variance in space, it is essential for de-raining models to extract both local and non-local features. Therefore, we design the complementary window-based transformer and spatial transformer to enhance locality while capturing long-range dependencies. Besides, to compensate for the positional blindness of self-attention, we establish a separate representative space for modeling positional relationship, and design a new relative position enhanced multi-head self-attention. In this way, our model enjoys powerful abilities to capture dependencies from both content and position, so as to achieve better image content recovery while removing rainy artifacts. Experiments substantiate that our approach attains more appealing results than state-of-the-art methods quantitatively and qualitatively.*
 
 ## Method
 
@@ -28,6 +28,12 @@
 - RainDS: [Link](https://github.com/Songforrr/RainDS_CCN)
 
 - AGAN-Data: [Link](https://github.com/rui1996/DeRaindrop)
+
+## Merging of Inferenced Patches
+To evaluate the image with arbitrary size, we first split the image to overlapped $128\times 128$ patches, and merge evaluated patches back to original resolution.
+Compared with directly averaging the overlapped zone, our testing precedure helps to mitigate block artifacts. Please see  <a href="test_full_size.py">test_full_size.py</a> for implementation.
+![Merge](fig/merge.png)
+
 
 ## Demo
 To test the pre-trained IDT model on full size images:
