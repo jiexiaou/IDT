@@ -29,7 +29,7 @@
 
 - AGAN-Data: [Link](https://github.com/rui1996/DeRaindrop)
 
-## Merging of Inferenced Patches
+## For full-size image
 To evaluate the image with arbitrary size, we first split the image to overlapped $128\times 128$ patches, and merge evaluated patches back to original resolution.
 Compared with directly averaging the overlapped zone, our testing precedure helps to mitigate block artifacts. Please see  <a href="test_full_size.py">test_full_size.py</a> for implementation.
 ![Merge](fig/merge.png)
