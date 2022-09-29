@@ -165,9 +165,6 @@ class DataLoaderTrain(data.Dataset):
         tar_img = tar_img[:, rr:rr + self.crop_size, cc:cc + self.crop_size]
         # Data Augmentations
         aug = random.randint(0, 3)
-        # Crop patch
-        inp_img = inp_img[:, rr:rr + self.crop_size, cc:cc + self.crop_size]
-        tar_img = tar_img[:, rr:rr + self.crop_size, cc:cc + self.crop_size]
         if aug == 1:
             inp_img = inp_img.flip(1)
             tar_img = tar_img.flip(1)
