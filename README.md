@@ -100,5 +100,5 @@ If you use IDT, please consider citing:
 This code is based on the [Uformer](https://github.com/ZhendongWang6/Uformer). The evaluation code borrows from [Restormer](https://github.com/swz30/Restormer) and [AttentGAN](https://github.com/rui1996/DeRaindrop).
 
 ## Contact
-Please contact us if there is any question(jiexiao916@gmail.com).
+Please contact us if there is any question(ustchbxj@mail.ustc.edu.cn).
 
